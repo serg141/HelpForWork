@@ -38,11 +38,12 @@ public class CreateNumberList {
         numberedList.put("name", "NumberedList");
         numberedList.put("code", "NUMBERED_LIST");
         numberedList.put("elements", element);
-        numberedList.put("html", "<li class=\\\"numbered-list__item\\\">\\n   " +
-                "<div class=\\\"numbered-list__wrapper\\\">\\n       " +
-                "<p data-creative-id=\\\"title\\\" class=\\\"numbered-list__heading\\\">Подберите авто</p>\\n       " +
-                "<p data-creative-id=\\\"description2\\\" class=\\\"numbered-list__description\\\"" +
-                ">Из наличия или закажите индивидуальную комплектацию</p>\\n   </div>\\n</li>");
+        numberedList.put("html", "<li class=\"numbered-list__item\">\n" +
+                "   <div class=\"numbered-list__wrapper\">\n" +
+                "       <p data-creative-id=\"list-heading\" class=\"numbered-list__heading\">Подберите авто</p>\n" +
+                "       <p data-creative-id=\"list-description\" class=\"numbered-list__description\">Из наличия или закажите индивидуальную комплектацию</p>\n" +
+                "   </div>\n" +
+                "</li>");
         numberedList.put("css", ".numbered-list__item::before {\n      content: \"1\";\n      color: #99A0AB;\n " +
                 "     font-weight: bold;\n      font-size: 22px;\n      line-height: 28px;\n      " +
                 "display: inline-block;\n      width: .5em;\n      margin-right: 30px;\n    }\n\n    " +
