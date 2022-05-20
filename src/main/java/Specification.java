@@ -14,7 +14,7 @@ public class Specification {
     static String logIn = new LogIn().logIn();
 
     public static RequestSpecification requestSpec() {
-        String url = "http://dsls-dam-red.ds5-genr03-dsls-d0-dso.apps.ds5-genr03.corp.dev.vtb";
+        String url = "http://dsls-dam-develop.ds5-genr03-dsls-d0-dso.apps.ds5-genr03.corp.dev.vtb";
         return new RequestSpecBuilder()
                 .setBaseUri(url)
                 .setContentType(ContentType.JSON)
@@ -22,7 +22,7 @@ public class Specification {
     }
 
     public static RequestSpecification List() {
-        String url = "http://dsls-dam-red.ds5-genr03-dsls-d0-dso.apps.ds5-genr03.corp.dev.vtb/lists";
+        String url = "http://dsls-dam-develop.ds5-genr03-dsls-d0-dso.apps.ds5-genr03.corp.dev.vtb/lists";
         return new RequestSpecBuilder()
                 .setSessionId("JSESSIONID", logIn)
                 .setBaseUri(url)
@@ -31,7 +31,7 @@ public class Specification {
     }
 
     public static RequestSpecification Template() {
-        String url = "http://dsls-dam-red.ds5-genr03-dsls-d0-dso.apps.ds5-genr03.corp.dev.vtb/templates";
+        String url = "http://dsls-dam-develop.ds5-genr03-dsls-d0-dso.apps.ds5-genr03.corp.dev.vtb/templates";
         return new RequestSpecBuilder()
                 .setSessionId("JSESSIONID", logIn)
                 .setBaseUri(url)
@@ -52,6 +52,6 @@ public class Specification {
 
     public void LogIn() {
         this.login = "vtb4040204";
-        this.pass = "141523Pota#";
+        this.pass = "141523Pota!!";
     }
 }

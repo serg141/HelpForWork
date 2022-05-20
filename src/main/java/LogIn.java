@@ -1,11 +1,4 @@
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import lombok.Data;
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.ArrayList;
-
 import static io.restassured.RestAssured.given;
 
 public class LogIn {
